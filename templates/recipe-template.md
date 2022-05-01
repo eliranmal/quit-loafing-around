@@ -17,13 +17,13 @@
 
 ## formulas [][info-formula]
 
-#### starter formula [](info-starters)
+#### starter formula [][info-starters]
 
 - **65** carrot cake tart
 - **55** chocolate icing tiramisu
 - **1.5** cotton candy sesame snaps
 
-#### dough formula [](info-starters)
+#### dough formula
 
 - **70** this flour
 - **30** that flour
