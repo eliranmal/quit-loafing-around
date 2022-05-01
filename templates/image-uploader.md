@@ -1,6 +1,4 @@
 
-# image uploader
-
 how to upload images to tumbler, to get a link, which can be embedded into markdown posts.
                     
 - edit this post
