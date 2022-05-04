@@ -4,7 +4,7 @@
 
 ### where is it
 
-<kbd>[quitloafingaround.tumblr.com][tumblr-qla]</kbd>
+[<kbd>quitloafingaround.tumblr.com</kbd>][tumblr-qla]
 
      
 ### a little taste
