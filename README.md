@@ -15,7 +15,7 @@
 ### thanx / attribution
 
 - my mom, Simona, for baking me into baking
-- [Joe Caiani][linkedin-jc], for (unintentionally) naming this blog with your witty comment
+- [Joe Caiani][linkedin-jc], for (unintentionally) naming this blog with his witty comment
 - [seyche][tumblr-sc], for authoring the base tumblr theme; _zinnia_ 
                         
 
