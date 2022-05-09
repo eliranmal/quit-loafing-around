@@ -2,3 +2,10 @@
 # IDE
 .idea
 .vscode
+
+# website generator
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
