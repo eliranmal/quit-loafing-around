@@ -6,7 +6,7 @@
 
 [<kbd>quitloafingaround.tumblr.com</kbd>][tumblr-qla]
 
-> <sup>:construction: the blog is now being migrated to github-pages, and will soon be found here:</sup>
+> <sub>:construction: the blog is now being migrated to github-pages, and will soon be found here:</sub>
 > 
 > [<kbd>eliranmal.github.io/quit-loafing-around</kbd>][ghpages-qla]
 
