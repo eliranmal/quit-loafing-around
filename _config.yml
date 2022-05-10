@@ -29,7 +29,7 @@ author: "eliran malka"
 # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 domain: eliranmal.github.io
 # the base hostname & protocol for your site, e.g. http://example.com
-url: https://eliranmal.github.io/quit-loafing-around
+url: https://eliranmal.github.io/quit-loafing-around/
 # the subpath of your site, e.g. /blog
 baseurl: ""
 
