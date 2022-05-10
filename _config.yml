@@ -23,13 +23,15 @@ title: quit loafing around
 description: >-
   stuff from my baking notebook. mostly bread. not only though. but mostly.
 
-author: eliran malka
+author: "eliran malka"
 #email: eliranmal@gmail.com
 
+# if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+domain: eliranmal.github.io
+# the base hostname & protocol for your site, e.g. http://example.com
+url: https://eliranmal.github.io
 # the subpath of your site, e.g. /blog
 baseurl: ""
-# the base hostname & protocol for your site, e.g. http://example.com
-url: ""
 
 # output URLs without file extensions
 permalink: pretty
