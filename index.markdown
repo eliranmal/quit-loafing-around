@@ -5,7 +5,6 @@
 layout: home
 ---
 
-<!--
 <nav class="navigation">
     <ul>
         <li><a href="{{ 'the-formula' | relative_link }}">how bakers think</a></li>
@@ -15,4 +14,3 @@ layout: home
         <li><a href="{{ 'pre-fermented-dough' | relative_link }}">the ol' dough</a></li>
     </ul>
 </nav>
--->
