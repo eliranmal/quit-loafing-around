@@ -8,11 +8,11 @@ layout: home
 <!--
 <nav class="navigation">
     <ul>
-        <li><a href="{% link pages/the-formula.html %}">how bakers think</a></li>
-        <li><a href="{% link pages/steps-in-breadmaking.html %}">the 12 steps</a></li>
-        <li><a href="{% link pages/mixing-methods.html %}">into the mix</a></li>
-        <li><a href="{% link pages/baking-guidelines.html %}">fire it up</a></li>
-        <li><a href="{% link pages/pre-fermented-dough.html %}">the ol' dough</a></li>
+        <li><a href="{{ 'the-formula' | relative_link }}">how bakers think</a></li>
+        <li><a href="{{ 'steps-in-breadmaking' | relative_link }}">the 12 steps</a></li>
+        <li><a href="{{ 'mixing-methods' | relative_link }}">into the mix</a></li>
+        <li><a href="{{ 'baking-guidelines' | relative_link }}">fire it up</a></li>
+        <li><a href="{{ 'pre-fermented-dough' | relative_link }}">the ol' dough</a></li>
     </ul>
 </nav>
 -->
