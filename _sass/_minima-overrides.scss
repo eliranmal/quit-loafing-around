@@ -2,12 +2,14 @@
 .site-header {
   position: sticky;
   top: 0;
-  padding: .5em 0;
+  padding: 0 0 .5em;
+  border-top: .5em solid var(--qla-color-foreground);
+  border-bottom: 0 none;
   background-color: var(--qla-color-background);
   font-variant: all-small-caps;
 
   .site-title {
-    color: var(--qla-color-foreground);
+    color: var(--qla-color-foreground-complement);
   }
 
   .site-nav {
@@ -30,11 +32,19 @@
   background-color: var(--qla-color-foreground);
 }
 
-.post-content {
+.post-content,
+.post-list li {
   > p > img {
     display: block;
     margin: 3em auto;
     border-radius: 50%;
     border: 1em solid var(--qla-color-background);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    border: 0 none;
+    background-color: var(--qla-color-background-complement);
   }
 }
