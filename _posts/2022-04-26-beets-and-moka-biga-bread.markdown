@@ -5,7 +5,10 @@ date:   2022-04-26 18:34:14 +0300
 ---
 
 ##### _a dark, sweet n' savory bread, with roasted beets and roasted coffee_
+
 ![the baked loaf & the moka maker][image-main]
+
+<!-- read more... -->
 
 
 ## formulas [][info-formula]
