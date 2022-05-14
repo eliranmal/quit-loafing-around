@@ -5,8 +5,6 @@ date:   2022-04-24 18:34:14 +0300
 ---
 
 ##### _a cross between a sandwitch loaf and northern cornbread, with peanut butter and honey_
-
-
 ![recipe image alt text][image-main]
 
 
