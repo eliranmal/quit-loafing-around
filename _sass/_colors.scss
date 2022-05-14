@@ -3,8 +3,8 @@
   --qla-color-accent: #f88219;
   --qla-color-background: #fff;
   --qla-color-background-complement: #e2e2e2;
-  --qla-color-foreground: #525252;
-  --qla-color-foreground-complement: #707070;
+  --qla-color-foreground: #565656;
+  --qla-color-foreground-complement: #3c3c3c;
 
   accent-color: var(--qla-color-accent);
 }
@@ -15,5 +15,6 @@
     --qla-color-background: #424242;
     --qla-color-background-complement: #222222;
     --qla-color-foreground: #b4b4b4;
+    --qla-color-foreground-complement: #cecece;
   }
 }
