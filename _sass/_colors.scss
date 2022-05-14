@@ -9,7 +9,7 @@
   accent-color: var(--qla-color-accent);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --qla-color-accent: #eaa66d;
     --qla-color-background: #424242;
