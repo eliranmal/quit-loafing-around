@@ -1,0 +1,12 @@
+---
+---
+
+// this file takes over the original path of the minima theme file,
+// as a method for extending it.
+@import "minima";
+@import "minima-overrides";
+
+// custom site styles
+@import "colors";
+@import "base";
+

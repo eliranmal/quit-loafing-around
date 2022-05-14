@@ -1,0 +1,24 @@
+
+html {
+  // this gives a nice contrast on scroll overflow
+  background-color: var(--qla-color-foreground);
+}
+
+body {
+  color: var(--qla-color-foreground);
+  background-color: var(--qla-color-background);
+}
+
+a {
+  font-weight: 500;
+
+  &, &:link, &:visited, &:hover, &:active {
+    color: var(--qla-color-foreground);
+    text-decoration: none;
+    text-decoration-skip-ink: all;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

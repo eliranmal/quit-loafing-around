@@ -43,6 +43,9 @@ show_excerpts: true
 header_pages:
   - about.markdown
 
+sass:
+  # possible values: nested expanded compact compressed
+  style: compact
 
 
 # build settings

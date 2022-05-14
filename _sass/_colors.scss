@@ -1,0 +1,19 @@
+
+:root {
+  --qla-color-accent: #f88219;
+  --qla-color-background: #fff;
+  --qla-color-background-complement: #e2e2e2;
+  --qla-color-foreground: #525252;
+  --qla-color-foreground-complement: #707070;
+
+  accent-color: var(--qla-color-accent);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --qla-color-accent: #eaa66d;
+    --qla-color-background: #424242;
+    --qla-color-background-complement: #222222;
+    --qla-color-foreground: #b4b4b4;
+  }
+}
