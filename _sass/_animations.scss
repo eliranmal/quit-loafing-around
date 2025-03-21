@@ -1,0 +1,38 @@
+
+header nav button {
+
+  @at-root &, .theme-light & {
+    color: blue;
+  }
+
+  @at-root .theme-dark & {
+    color: red;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @at-root & {
+      color: red;
+    }
+  }
+
+  &:before {
+    content: '\01f311';
+    animation: moon-to-full .5s 1 forwards;
+  }
+}
+
+@keyframes moon-to-full {
+  0% { content: '\01f311' }
+  25% { content: '\01f312' }
+  50% { content: '\01f313' }
+  75% { content: '\01f314' }
+  100% { content: '\01f315' }
+}
+
+@keyframes moon-to-new {
+  0% { content: '\01f315' }
+  25% { content: '\01f316' }
+  50% { content: '\01f317' }
+  75% { content: '\01f318' }
+  100% { content: '\01f311' }
+}

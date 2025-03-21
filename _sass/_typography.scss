@@ -1,0 +1,90 @@
+
+/* definitions */
+
+:root {
+  --qla-font-weight-bold: 600;
+  --qla-font-weight-light: 200;
+
+  font-size: 20px;
+  font-family: sans-serif;
+  //letter-spacing: .01em;
+}
+
+
+/* base style */
+
+h1, h2, h3, h4, h5, h6, dt, nav {
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+h1 {
+  text-transform: uppercase;
+  //word-break: break-word;
+}
+h1, h2, h3, h4, h5 {
+  font-family: serif;
+  font-weight: var(--qla-font-weight-light);
+}
+h6 {
+  font-weight: var(--qla-font-weight-bold);
+}
+
+strong {
+  font-weight: var(--qla-font-weight-bold);
+}
+
+em, dd {
+  font-style: italic;
+}
+
+a {
+  font-weight: var(--qla-font-weight-bold);
+}
+
+
+/* vertical rhythm */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block-start: 1.25em;
+  margin-block-end: .75em;
+  line-height: .925;
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+}
+
+h1 { font-size: 350%; }
+h2 { font-size: 210%; }
+h3 { font-size: 170%; }
+h4 { font-size: 150%; }
+h5, dt { font-size: 130%; }
+h6 { font-size: 115%; }
+
+sub, sup {
+  font-size: 85%;
+}
+
+p, ol, ul, dl, hr, blockquote {
+  line-height: 1.4;
+  margin-block-end: 1em;
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+li {
+  // todo - should this value be bigger?
+  margin-block-end: .25em;
+
+  &:last-of-type {
+    margin-block-end: 0;
+  }
+}
+
+dt {
+  margin-block-end: .5em;
+  margin-block-start: 1.5em;
+}
+

@@ -1,20 +1,70 @@
 
-:root {
+@mixin theme-light() {
   --qla-color-accent: #f88219;
-  --qla-color-background: #fff;
-  --qla-color-background-complement: #e2e2e2;
+  --qla-color-background: #fafafa;
+  --qla-color-background-complement: #dcdcdc;
   --qla-color-foreground: #565656;
   --qla-color-foreground-complement: #3c3c3c;
+}
 
-  accent-color: var(--qla-color-accent);
+@mixin theme-dark() {
+  --qla-color-accent: #eaa66d;
+  --qla-color-background: #424242;
+  --qla-color-background-complement: #222222;
+  --qla-color-foreground: #a2a2a2;
+  --qla-color-foreground-complement: #ccc;
+}
+
+:root,
+:root.theme-light {
+  @include theme-light();
+}
+
+:root.theme-dark {
+  @include theme-dark();
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --qla-color-accent: #eaa66d;
-    --qla-color-background: #424242;
-    --qla-color-background-complement: #222222;
-    --qla-color-foreground: #b4b4b4;
-    --qla-color-foreground-complement: #cecece;
+    @include theme-dark();
+  }
+}
+
+
+:root {
+  accent-color: var(--qla-color-accent);
+  // this gives a nice contrast on scroll overflow
+  // (can only be used if the body spans the full width of the viewport)
+  background-color: var(--qla-color-foreground);
+}
+
+body {
+  color: var(--qla-color-foreground);
+  background-color: var(--qla-color-background-complement);
+
+  header {
+    background-color: var(--qla-color-background);
+  }
+
+  footer {
+    color: var(--qla-color-background);
+    background-color: var(--qla-color-foreground);
+  }
+}
+
+a {
+  //color: var(--qla-color-foreground-complement);
+  //text-decoration-color: var(--qla-color-foreground);
+
+  &:hover {
+    color: var(--qla-color-accent);
+  }
+
+  @at-root nav & {
+    color: var(--qla-color-accent);
+
+    &:hover {
+      color: unset;
+    }
   }
 }

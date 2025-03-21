@@ -1,0 +1,75 @@
+
+body {
+  --qla-header-height: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  header, footer, aside {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+
+  footer {
+    padding-block-start: 3rem;
+    padding-block-end: 3rem;
+  }
+
+  header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--qla-header-height);
+    box-sizing: content-box;
+    border-block-start: .5rem solid;
+
+    > h1 {
+      margin: 0;
+      font-size: 130%;
+      text-transform: none;
+      font-weight: 900;
+      font-family: sans-serif;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: stretch;
+    // these side paddings avoid auto margins, to fill the parent width
+    padding:
+            calc(var(--qla-header-height) + 3rem)
+            max(3rem, calc((100vw - 960px) / 2))
+            3rem;
+
+    > section {
+      //width: 100%;
+
+      > {
+        :first-child {
+          margin-block-start: 0;
+        }
+        :last-child {
+          margin-block-end: 0;
+        }
+      }
+    }
+  }
+
+  aside {
+    position: sticky;
+    top: calc(var(--qla-header-height) + 3rem);
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: max(33%, 250px);
+    height: min-content;
+    padding-inline-start: 4rem;
+  }
+}

@@ -1,0 +1,45 @@
+
+@mixin list-item() {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: -2em;
+    width: 2em;
+    text-align: end;
+    opacity: .35;
+  }
+}
+
+@mixin bullet-list($item-tag: li) {
+  #{$item-tag} {
+    @include list-item;
+
+    &:before {
+      //content: '\0000b7'; /* middot */
+      //content: '\002022'; /* bullet */
+      content: '\002027'; /* hyphenation point */
+      padding-inline-end: .25em;
+      line-height: .75em;
+      font-size: 2em;
+    }
+  }
+}
+
+@mixin counter-list($item-tag: li) {
+  counter-reset: item;
+
+  #{$item-tag} {
+    @include list-item;
+    counter-increment: item;
+
+    &:before {
+      content: counter(item);
+      padding-inline-end: .4em;
+      line-height: 1;
+      font-size: 1.5em;
+      font-weight: 900;
+      font-family: serif;
+    }
+  }
+}

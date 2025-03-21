@@ -1,24 +1,48 @@
 
-html {
-  // this gives a nice contrast on scroll overflow
-  background-color: var(--qla-color-foreground);
+/* interactions */
+
+a, button, select {
+  cursor: pointer;
 }
 
-body {
-  color: var(--qla-color-foreground);
-  background-color: var(--qla-color-background);
+
+/* lists */
+
+ul {
+  @include bullet-list();
 }
-
-a {
-  font-weight: 500;
-
-  &, &:link, &:visited, &:hover, &:active {
-    color: var(--qla-color-foreground);
-    text-decoration: none;
-    text-decoration-skip-ink: all;
+ol {
+  @include counter-list();
+}
+dl {
+  dd {
+    //padding-inline-start: 3em;
+    padding-inline-start: calc(100% / 12);
   }
-  &:hover {
-    text-decoration: underline;
+  &.qla-ordered-list {
+    @include counter-list(dt);
   }
 }
 
+
+/* quotes, pre-formatted content, sub/superscript */
+
+blockquote,
+sub, sup {
+  display: inline-block;
+  opacity: .78;
+}
+
+blockquote {
+  border-inline-start: .25em solid var(--qla-color-accent);
+  padding: .25em 1.75em;
+}
+
+
+/* dividers */
+
+hr {
+  width: 1.25em;
+  margin: 3em auto;
+  border-block-start: .25em dotted var(--qla-color-accent);
+}
